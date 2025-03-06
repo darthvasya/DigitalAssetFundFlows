@@ -19,6 +19,10 @@ def create_data():
         db.add(asset)
         db.commit()
 
+        asset = Asset(name="ETH")
+        db.add(asset)
+        db.commit()
+
         flow = Flow(amount=75, date="2023-10-01", asset=asset, institution=institution)
         db.add(flow)
         db.commit()
